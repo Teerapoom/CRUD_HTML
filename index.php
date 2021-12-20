@@ -99,9 +99,10 @@
             Namefood = $("#Namefood").val();
             pricefood = $("#pricefood").val();
 
-            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(1).html(Namefood);
-            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(2).html(countryfood)
-            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(3).html(ShopName)
+            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(0).html(Idfood);
+            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(1).html(ShopName);
+            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(2).html(Namefood);
+            $('#tblAll tbody tr').eq($('#hfRowIndex').val()).find('td').eq(3).html(pricefood);
 
             $('#btnAdd').show();
             $('#btnUpdate').hide();
